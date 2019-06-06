@@ -8,18 +8,18 @@
   </head>
   <body>
 
-    <h1>Components</h1>
+    <h1>Referencing with refs</h1>
 
-    <div id="vue-app-one">
+    <div id="vue-app">
       <h2>Vue app one</h2>
-      <greeting></greeting>
+      <input type="text" ref="input"/>
+      <button v-on:click="readRefs">Submit</button>
+      <p>Your fav food: {{ output }}</p>
+      <div ref="test">hello
+
+      </div>
     </div>
 
-    <div id="vue-app-two">
-      <h2>Vue app two</h2>
-      <greeting></greeting>
-    </div>
-    
     <script src="app.js"></script>
   </body>
 </html>
