@@ -13,12 +13,12 @@ export default {
       required: true
     }
   },
-  data () {
+  data() {
     return {
       copyright: 'Copyright 2019'
     }
   },
-  created(){
+  created() {
     bus.$on('titleChanged', (data) => {
       this.title = data;
     })
